@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Slider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -27,16 +27,6 @@ export const Slider = () => {
     };
   }, []);
 
-  console.log(1, 3);
-
-  // useEffect(() => {
-  //   console.log('Prev Ref:', prevRef.current);
-  //   console.log('Next Ref:', nextRef.current);
-  // }, []);
-
-  // const prevRef = useRef(null);
-  // const nextRef = useRef(null);
-
   const left = isMobile ? leftMobile : leftDesktop;
   const right = isMobile ? rightMobile : rightDesktop;
 
@@ -54,15 +44,6 @@ export const Slider = () => {
           prevEl: '.slider-arrow_prev',
           nextEl: '.slider-arrow_next',
         }}
-        // navigation={{
-        //   prevEl: prevRef.current,
-        //   nextEl: nextRef.current,
-        // }}
-        // onBeforeInit={(swiper) => {
-        //   swiper.params.navigation.prevEl = prevRef.current;
-        //   swiper.params.navigation.nextEl = nextRef.current;
-        //   swiper.navigation.update();
-        // }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
       >
         <SwiperSlide>
