@@ -1,0 +1,104 @@
+@import '../../style/fontPresets.scss';
+@import '../../style/colors.scss';
+@import '../../style/media.scss';
+
+.title {
+  position: relative;
+  
+  h1 {
+      position: relative;
+      font-size: inherit;
+
+      @include text-title;
+
+      margin: 0 auto;
+      width: fit-content;
+  }
+
+  &__start-screen {
+    margin-top: 23px;
+    font-size: 84px;
+
+    &::after {
+      content: 'Explore our intriguing 3D game';
+
+      @include text-title-stroke;
+    }
+
+    @include on-desktop {
+      font-size: 56px;
+    }
+
+    @include on-laptop {
+      font-size: 44px;
+    }
+
+    @include on-tablet {
+      margin-top: 14px;
+      font-size: 32px;
+    }
+
+    @include on-mobile {
+      margin-top: 10px;
+      font-size: 32px;
+    }
+  }
+
+  &__slider-screen {
+    font-size: 56px;
+
+    &::after {
+      content: 'Who Would You Choose as Your First Partner, if you play right now?';
+
+      @include text-title-stroke;
+    }
+
+    @include on-desktop {
+      font-size: 46px;
+      margin-top: 20px;
+      margin: 0 auto;
+    }
+
+    @include on-laptop {
+      font-size: 36px;
+      margin-top: 20px;
+      margin: 0 auto;
+    }
+
+    @include on-tablet {
+      font-size: 30px;
+      margin-top: 20px;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    @include on-mobile {
+      margin-top: 20px;
+      font-size: 24px;
+      max-width: 300px;
+    }
+  }
+
+  &__warning {
+    font-size: 120px;
+
+    &::after {
+      content: 'warning';
+
+      @include text-title-stroke;
+    }
+
+    @include on-laptop {
+      font-size: 90px;
+    }
+
+    @include on-tablet {
+      font-size: 80px;
+    }
+
+    @include on-mobile {
+      margin-top: 20px;
+      font-size: 50px;
+    }
+  }
+}

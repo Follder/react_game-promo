@@ -1,0 +1,117 @@
+@import '../../style/fontPresets.scss';
+@import '../../style/colors.scss';
+@import '../../style/media.scss';
+
+.startScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 1;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+  }
+
+  @include on-laptop {
+    justify-content: space-around;
+  }
+  @include on-tablet {
+    justify-content: space-between;
+  }
+}
+
+.info {
+  @include text-info;
+  color: $white;
+
+  padding: 16px 30px;
+  border: 1px solid $white;
+  background-color: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 50px;
+  width: fit-content;
+
+  margin: 0 auto;
+
+  @include on-desktop {
+    font-size: 30px;
+    padding: 12px 24px;
+  }
+
+  @include on-laptop {
+    font-size: 26px;
+    padding: 8px 18px;
+    margin-top: 40px;
+  }
+
+  @include on-tablet {
+    font-size: 22px;
+    padding: 6px 18px;
+    margin-top: 30px;
+  }
+
+  @include on-mobile {
+    font-size: 16px;
+    padding: 6px 6px;
+
+    max-width: 260px;
+    margin-top: 20px;
+  }
+}
+
+.description {
+  font-size: 28px;
+  margin-top: 40px;
+
+  @include text-description;
+
+  @include on-laptop {
+    line-height: 120%;
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  @include on-tablet {
+    line-height: 120%;
+    font-size: 16px;
+    margin-top: 12px;
+  }
+
+  @include on-mobile {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 50px;
+
+  margin-top: 80px;
+
+  @include on-laptop {
+    flex-direction: column-reverse;
+    gap: 10px;
+
+    margin-bottom: 20px;
+  }
+}

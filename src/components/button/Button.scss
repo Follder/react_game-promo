@@ -1,0 +1,55 @@
+@import '../../style/media.scss';
+@import '../../style/fontPresets.scss';
+@import '../../style/colors.scss';
+.btn {
+  box-shadow: 4px 4px 20px rgba(255, 255, 255, .4);
+  border-radius: 10px;
+
+  button {
+    width: 323px;
+    height: 84px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: 'Nirmala UI Bold', sans-serif;
+    color: $white;
+    font-size: 32px;
+    text-transform: uppercase;
+  
+    border-radius: 10px;
+  
+    transition: .5s all;
+    cursor: pointer;
+
+    @include on-tablet {
+      height: 56px;
+      font-size: 24px;
+      border-radius: 5px;
+    }
+  }
+
+  &_accept {
+    background: linear-gradient(-15deg, #EB5D38, #FFD600);
+    border: none;
+  
+    transition: .5s all;
+  
+    &:hover {
+      font-size: 24px;
+      box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &_decline {
+    background: transparent;
+    border: 2px solid $white;
+  
+    &:hover {
+      font-size: 24px;
+      background-color: rgba(255, 255, 255, .2);
+      box-shadow: 4px 4px 20px rgba(255, 255, 255, .4);
+    }
+  }
+}

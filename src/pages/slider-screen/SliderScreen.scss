@@ -1,0 +1,26 @@
+@import '../../style/colors.scss';
+@import '../../style/media.scss';
+
+.slider-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+
+
+  text-align: center;
+
+  height: 100vh;
+
+  &_btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include on-mobile {
+    gap: 0;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+  }
+}

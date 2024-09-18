@@ -1,0 +1,202 @@
+@import '../../style/colors.scss';
+@import '../../style/media.scss';
+@import '../../style/fontPresets.scss';
+
+.App {
+  background-image: url('../../assets/images/background.jpg');
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.motion-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.volume-icon {
+  position: absolute;
+
+  top: 48px;
+  right: 74px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $background-volume;
+  border-radius: 50%;
+  cursor: pointer;
+
+  z-index: 100;
+
+  transition: 1s all;
+
+  @include on-desktop {
+    width: 52px;
+    height: 52px;
+
+    top: 48px;
+    right: 74px
+  }
+  @include on-laptop {
+    width: 40px;
+    height: 40px;
+
+    top: 38px;
+    right: 26px
+  }
+  @include on-tablet {
+    width: 40px;
+    height: 40px;
+
+    top: 32px;
+    right: 16px;
+  }
+  @include on-mobile {
+    width: 30px;
+    height: 30px;
+
+    top: 28px;
+    right: 11px;
+  }
+
+  img {
+    @include on-laptop {
+      max-width: 25px;
+    }
+    @include on-mobile {
+      max-width: 18px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    transform: rotate(-45deg);
+
+    width: 75px;
+    height: 4px;
+    background-color: $white;
+
+    opacity: 0;
+    transition: .5s opacity;
+
+    @include on-desktop {
+      height: 3px;
+      width: 65px;
+    }
+
+    @include on-laptop {
+      height: 2px;
+      width: 55px;
+    }
+
+    @include on-tablet {
+      height: 2px;
+    }
+
+    @include on-mobile {
+      height: 1px;
+      width: 40px;
+    }
+  }
+
+  &__off::after {
+    opacity: 1;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  height: 100%;
+
+  @include on-desktop {
+    max-width: 960px;
+  }
+
+  @include on-laptop {
+    max-width: 720px;
+  }
+
+  @include on-tablet {
+    max-width: 540px;
+  }
+
+  @include on-mobile {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.woman {
+  position: absolute;
+  bottom: 0;
+
+  &_left {
+    left: 5%;
+    max-height: 80%;
+
+    @media (max-width: 1600px) {
+      display: none;
+    }
+  }
+
+  &_right {
+    right: 0;
+    max-height: 70%;
+
+    @include on-desktop {
+      max-height: 60%;
+      right: -5%;
+    }
+
+    @include on-laptop {
+      max-height: 60%;
+      right: 0;
+    }
+
+    @include on-tablet {
+      right: 50%;
+      transform: translateX(50%)!important;
+    }
+  }
+
+  &_left-2 {
+    left: 1%;
+    max-height: 80%;
+
+    @include on-desktop {
+      max-height: 70%;
+      left: 0;
+    }
+
+    @include on-tablet {
+      left: 50%;
+      transform: translateX(-50%)!important;
+    }
+  }
+
+  &_right-2 {
+    right: 2%;
+    max-height: 80%;
+
+    @include on-desktop {
+      max-height: 65%;
+      right: 0;
+    }
+
+    @include on-tablet {
+      display: none;
+    }
+  }
+}

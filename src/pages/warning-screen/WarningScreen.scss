@@ -1,0 +1,70 @@
+@import '../../style/colors.scss';
+@import '../../style/media.scss';
+
+.warning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+
+
+  text-align: center;
+
+  max-width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    display: flex;
+    margin-top: 80px;
+
+    z-index: 2;
+
+    @include on-tablet {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__description {
+    font-size: 32px;
+    color: $white;
+    line-height: 140%;
+
+    text-shadow: 0 4px 8px rgba(0,0,0, .25);
+    z-index: 2;
+
+    @include on-desktop {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @include on-laptop {
+      font-size: 26px;
+    }
+
+    @include on-tablet {
+      font-size: 26px;
+    }
+
+    @include on-mobile {
+      font-size: 20px;
+    }
+  }
+
+  @include on-laptop {
+    justify-content: space-around;
+  }
+
+  @include on-tablet {
+    justify-content: space-between;
+  }
+}
