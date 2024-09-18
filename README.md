@@ -1,4 +1,4 @@
-# List of users
+# Promo for game
 
 ## Demo
 For Demo this project you can use [DEMO LINK](https://follder.github.io/react_game-promo/)
