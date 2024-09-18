@@ -1,14 +1,32 @@
 # Promo for game
 
 ## Demo
+
 For Demo this project you can use [DEMO LINK](https://follder.github.io/react_game-promo/)
 
 ## Project timeline
 
 This project was created as a test project to demonstrate skills including:
+
 - File composition
 - Responsive & adaptive markup
 - Work with animations
+
+## Slider
+
+It`s simple to add new slides to slider:
+
+```javascript
+    <SwiperSlide>
+      <Card image={first-slide-image} text="first-slide-description" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <Card image={second-slide-image} text="second-slide-description" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <... />
+    </SwiperSlide>
+```
 
 ## Technologies Used
 
