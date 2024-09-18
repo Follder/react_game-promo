@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react_game-promo/static/css/main.7e051993.css",
+    "main.css": "/react_game-promo/static/css/main.fd2b5742.css",
     "main.js": "/react_game-promo/static/js/main.294a1656.js",
     "static/media/background.jpg": "/react_game-promo/static/media/background.88a23c90b7b99b714a6a.jpg",
     "static/media/woman-right-2.png": "/react_game-promo/static/media/woman-right-2.5d35c4476b11c36ed0e9.png",
@@ -16,11 +16,11 @@
     "static/media/rightMobile.svg": "/react_game-promo/static/media/rightMobile.b084588d12fa416be66626b1242c1a32.svg",
     "static/media/leftMobile.svg": "/react_game-promo/static/media/leftMobile.cf22f8153175e536cd1fbb2243e56c5b.svg",
     "static/media/leftDesktop.svg": "/react_game-promo/static/media/leftDesktop.6380cbe73a052eef22abaa0e81dcac1c.svg",
-    "main.7e051993.css.map": "/react_game-promo/static/css/main.7e051993.css.map",
+    "main.fd2b5742.css.map": "/react_game-promo/static/css/main.fd2b5742.css.map",
     "main.294a1656.js.map": "/react_game-promo/static/js/main.294a1656.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e051993.css",
+    "static/css/main.fd2b5742.css",
     "static/js/main.294a1656.js"
   ]
 }
