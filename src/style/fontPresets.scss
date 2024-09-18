@@ -6,7 +6,7 @@
 }
 
 @mixin text-title {
-  font-family: "Nirmala UI Bold";
+  font-family: "Nirmala UI Bold", "Nirmala UI", sans-serif;
   text-transform: uppercase;
   line-height: 120%;
   background: $bg-gradient;
@@ -25,7 +25,7 @@
   color: $white;
   -webkit-text-stroke: 4px $white;
   text-transform: uppercase;
-  font-family: 'Nirmala UI Bold', sans-serif;
+  font-family: 'Nirmala UI Bold', "Nirmala UI", sans-serif;
   line-height: 120%;
   z-index: 1;
 
@@ -35,7 +35,7 @@
 }
 
 @mixin text-description {
-  font-family: 'Nirmala UI Bold', sans-serif;
+  font-family: 'Nirmala UI Bold', "Nirmala UI", sans-serif;
   line-height: 140%;
   letter-spacing: 5px;
   text-transform: uppercase;
