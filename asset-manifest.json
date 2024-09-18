@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_game-promo/static/css/main.6ac2aede.css",
-    "main.js": "/react_game-promo/static/js/main.294a1656.js",
+    "main.js": "/react_game-promo/static/js/main.cd545de8.js",
     "static/media/svg": "/react_game-promo/static/media/203748910c1bfb8227b221641582f0b8.ddacfcc7708061ca4bfe.svg",
     "static/media/eot": "/react_game-promo/static/media/203748910c1bfb8227b221641582f0b8.1c80b0a9ec15ce819533.eot",
     "static/media/ttf": "/react_game-promo/static/media/203748910c1bfb8227b221641582f0b8.546d7f26e1aed62c3988.ttf",
@@ -22,10 +22,10 @@
     "static/media/leftMobile.svg": "/react_game-promo/static/media/leftMobile.cf22f8153175e536cd1fbb2243e56c5b.svg",
     "static/media/leftDesktop.svg": "/react_game-promo/static/media/leftDesktop.6380cbe73a052eef22abaa0e81dcac1c.svg",
     "main.6ac2aede.css.map": "/react_game-promo/static/css/main.6ac2aede.css.map",
-    "main.294a1656.js.map": "/react_game-promo/static/js/main.294a1656.js.map"
+    "main.cd545de8.js.map": "/react_game-promo/static/js/main.cd545de8.js.map"
   },
   "entrypoints": [
     "static/css/main.6ac2aede.css",
-    "static/js/main.294a1656.js"
+    "static/js/main.cd545de8.js"
   ]
 }
