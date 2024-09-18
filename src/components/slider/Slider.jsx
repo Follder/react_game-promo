@@ -27,6 +27,11 @@ export const Slider = () => {
     };
   }, []);
 
+  useEffect(() => {
+    console.log('Prev Ref:', prevRef.current);
+    console.log('Next Ref:', nextRef.current);
+  }, []);
+
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -50,6 +55,7 @@ export const Slider = () => {
         onBeforeInit={(swiper) => {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.update();
         }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
       >
