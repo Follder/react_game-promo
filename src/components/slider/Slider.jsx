@@ -27,20 +27,22 @@ export const Slider = () => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log('Prev Ref:', prevRef.current);
-    console.log('Next Ref:', nextRef.current);
-  }, []);
+  console.log(1, 3);
 
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  // useEffect(() => {
+  //   console.log('Prev Ref:', prevRef.current);
+  //   console.log('Next Ref:', nextRef.current);
+  // }, []);
+
+  // const prevRef = useRef(null);
+  // const nextRef = useRef(null);
 
   const left = isMobile ? leftMobile : leftDesktop;
   const right = isMobile ? rightMobile : rightDesktop;
 
   return (
     <div className="slider">
-      <div className="slider-arrow slider-arrow_prev" ref={prevRef}>
+      <div className="slider-arrow slider-arrow_prev">
         <img src={left} alt="prev slide" />
       </div>
 
@@ -49,14 +51,18 @@ export const Slider = () => {
         slidesPerView={1}
         loop={true}
         navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
+          prevEl: '.slider-arrow_prev',
+          nextEl: '.slider-arrow_next',
         }}
-        onBeforeInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
-          swiper.navigation.update();
-        }}
+        // navigation={{
+        //   prevEl: prevRef.current,
+        //   nextEl: nextRef.current,
+        // }}
+        // onBeforeInit={(swiper) => {
+        //   swiper.params.navigation.prevEl = prevRef.current;
+        //   swiper.params.navigation.nextEl = nextRef.current;
+        //   swiper.navigation.update();
+        // }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
       >
         <SwiperSlide>
@@ -70,7 +76,7 @@ export const Slider = () => {
         </SwiperSlide>
       </Swiper>
 
-      <div className="slider-arrow slider-arrow_next" ref={nextRef}>
+      <div className="slider-arrow slider-arrow_next">
         <img src={right} alt="next slide" />
       </div>
     </div>
