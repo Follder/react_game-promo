@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react_game-promo/static/css/main.7e051993.css",
+    "main.js": "/react_game-promo/static/js/main.294a1656.js",
+    "static/media/background.jpg": "/react_game-promo/static/media/background.88a23c90b7b99b714a6a.jpg",
+    "static/media/woman-right-2.png": "/react_game-promo/static/media/woman-right-2.5d35c4476b11c36ed0e9.png",
+    "static/media/woman-left-2.png": "/react_game-promo/static/media/woman-left-2.c78774092540ba7b050c.png",
+    "static/media/woman-left-1.png": "/react_game-promo/static/media/woman-left-1.de5a6fecf283e32ccc53.png",
+    "static/media/woman-right-1.png": "/react_game-promo/static/media/woman-right-1.668381ec2cfdb62cc172.png",
+    "static/media/03.png": "/react_game-promo/static/media/03.23fffffa866ddade6a2c.png",
+    "static/media/01.png": "/react_game-promo/static/media/01.986f96b090643fe156a4.png",
+    "static/media/02.png": "/react_game-promo/static/media/02.99b0fe2385cbbca4aea6.png",
+    "static/media/volume.svg": "/react_game-promo/static/media/volume.85815136bd72fbc48c4de846c8fad6a4.svg",
+    "index.html": "/react_game-promo/index.html",
+    "static/media/rightDesktop.svg": "/react_game-promo/static/media/rightDesktop.41816c017592484139995cc55d9adf3c.svg",
+    "static/media/rightMobile.svg": "/react_game-promo/static/media/rightMobile.b084588d12fa416be66626b1242c1a32.svg",
+    "static/media/leftMobile.svg": "/react_game-promo/static/media/leftMobile.cf22f8153175e536cd1fbb2243e56c5b.svg",
+    "static/media/leftDesktop.svg": "/react_game-promo/static/media/leftDesktop.6380cbe73a052eef22abaa0e81dcac1c.svg",
+    "main.7e051993.css.map": "/react_game-promo/static/css/main.7e051993.css.map",
+    "main.294a1656.js.map": "/react_game-promo/static/js/main.294a1656.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e051993.css",
+    "static/js/main.294a1656.js"
+  ]
+}
